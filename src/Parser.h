@@ -1,9 +1,17 @@
 #pragma once
 
+#include <map>
+#include <string>
+#include <vector>
+
 #include "TokenType.h";
 #include "Token.h";
 #include "State.h";
 
-class Parser {
-    //TODO: Implement Parser
+class Parser
+{
+	private:
+		std::map<std::string, std::vector<Token>> _cache;
+
+	public:
 };
